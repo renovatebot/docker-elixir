@@ -1,14 +1,18 @@
-FROM renovate/base@sha256:43ca1bebe0b003e52b5a5279bf8b711cc80974f016455ae85529e022ceea66da
+FROM renovate/erlang
 
 USER root
 
-RUN cd /tmp && \
-    curl https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb -o erlang-solutions_1.0_all.deb && \
-    dpkg -i erlang-solutions_1.0_all.deb && \
-    rm -f erlang-solutions_1.0_all.deb
+ENV ELIXIR_VERSION 1.8.2
 
-RUN apt-get update && apt-get install -y esl-erlang elixir && apt-get clean
+RUN curl -L https://github.com/elixir-lang/elixir/releases/download/v${ELIXIR_VERSION}/Precompiled.zip -o Precompiled.zip && \
+    mkdir -p /opt/elixir-${ELIXIR_VERSION}/ && \
+    unzip Precompiled.zip -d /opt/elixir-${ELIXIR_VERSION}/ && \
+    rm Precompiled.zip
+
+ENV PATH $PATH:/opt/elixir-${ELIXIR_VERSION}/bin
 
 USER ubuntu
 
 RUN mix --version
+RUN mix local.hex --force
+RUN mix local.rebar --force
