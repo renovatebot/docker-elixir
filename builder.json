@@ -1,0 +1,5 @@
+{
+  "image": "elixir",
+  "startVersion": "1.8.2",
+  "cache": "docker-build-cache"
+}
