@@ -1,5 +1,7 @@
 {
   "image": "elixir",
+  "datasource": "docker",
+  "versioning": "docker",
   "startVersion": "1.8.2",
   "cache": "docker-build-cache"
 }
