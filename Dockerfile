@@ -1,4 +1,4 @@
-FROM renovate/buildpack:2-erlang@sha256:b874707bfa2df33d5fc9d02b26458cd7d40e2b098e70ab9cecc198ce1dd6bfcd
+FROM renovate/buildpack:3-erlang@sha256:1525ef0d794d312417e8db965128e518d71fcafa5a5b7dd7bccf56c2c6f79dd3
 
 RUN install-tool erlang 22.3.2
 
