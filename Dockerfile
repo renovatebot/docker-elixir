@@ -2,7 +2,7 @@
 ARG ERLANG_VERSION=22.3.2
 
 # renovate: datasource=docker depName=elixir versioning=docker
-ARG ELIXIR_VERSION=1.13.1
+ARG ELIXIR_VERSION=1.13.2
 
 FROM renovate/buildpack:5@sha256:a21d804488fc6c06d421aba67a1c8793e9a5cb2e43ca8fa4557accbb10692917
 
