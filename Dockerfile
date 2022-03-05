@@ -1,5 +1,5 @@
 # renovate: datasource=github-releases depName=erlang lookupName=containerbase/erlang-prebuild versioning=loose
-ARG ERLANG_VERSION=22.3.4
+ARG ERLANG_VERSION=22.3.4.24
 
 # renovate: datasource=docker depName=elixir versioning=docker
 ARG ELIXIR_VERSION=1.13.3
