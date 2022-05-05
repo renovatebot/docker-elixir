@@ -4,7 +4,7 @@ ARG ERLANG_VERSION=22.3.4.25
 # renovate: datasource=docker depName=elixir versioning=docker
 ARG ELIXIR_VERSION=1.13.4
 
-FROM renovate/buildpack:6@sha256:353a7ca6806ae6aaf4efc2f15e80b07218261eb5198dcaf0816e1c56ac5b3045
+FROM renovate/buildpack:6@sha256:77fc989698e57b2ea70b8997eedd7526e7789a8be03606b27b5f26e06e3badae
 
 ARG ERLANG_VERSION
 RUN install-tool erlang
