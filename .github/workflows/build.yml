@@ -36,3 +36,4 @@ jobs:
         with:
           command: "docker-builder"
           dry-run: ${{github.ref != 'refs/heads/main'}}
+          token: ${{ secrets.GITHUB_TOKEN }}
