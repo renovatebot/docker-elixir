@@ -1,5 +1,6 @@
 {
   "image": "elixir",
   "startVersion": "1.8.2",
+  "extractVersion": "^v(?<version>.*)$",
   "cache": "docker-build-cache"
 }
