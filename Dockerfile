@@ -7,7 +7,7 @@ ARG ERLANG_VERSION=22.3.4.26
 # renovate: datasource=github-releases depName=elixir lookupName=elixir-lang/elixir
 ARG ELIXIR_VERSION=1.13.4
 
-FROM ghcr.io/containerbase/buildpack:4.7.2@sha256:bdf5e7b058f80acb094b115b87e34c29cf17b1e4cfa92e531846477c8580bc97
+FROM ghcr.io/containerbase/buildpack:4.7.3@sha256:4fad95ac4053ed67236859f1565552d1506ee06d2562108ab87df50e683dca01
 
 ARG ERLANG_VERSION
 RUN install-tool erlang
