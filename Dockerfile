@@ -1,5 +1,8 @@
+# https://hexdocs.pm/elixir/1.13.4/compatibility-and-deprecations.html#compatibility-between-elixir-and-erlang-otp
+# we rebuild from 1.8.2, so we are stuck on v22
+
 # renovate: datasource=github-releases depName=erlang lookupName=containerbase/erlang-prebuild versioning=loose
-ARG ERLANG_VERSION=24.3.4.2
+ARG ERLANG_VERSION=22.3.4.26
 
 # renovate: datasource=docker depName=elixir versioning=docker
 ARG ELIXIR_VERSION=1.13.4
